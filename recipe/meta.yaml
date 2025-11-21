@@ -1,4 +1,4 @@
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: remage
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/legend-exp/remage/archive/v{{ version }}.tar.gz
-  sha256: d5a058b0f33d778425ad6edc60f9b3a949071e56bf859b0d2c2e506a3d823771
+  sha256: 4e1de1c634a4981e36dc925a4b43b7b1fa8db0bfd018ebe344e2fb2ce5a3b929
 
 build:
   skip: true  # [win or py<311]
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make
   host:
-    - geant4
+    - geant4 >=11.3
     - clhep
     - xerces-c
     - hdf5
@@ -34,9 +34,9 @@ requirements:
     - setuptools
     - setuptools-scm
 
-    - legend-pydataobj >=1.16,<1.17
-    - reboost ==0.6.*
-    - pygama >=2.2.3,<2.3
+    - legend-pydataobj >=1.16
+    - reboost >=0.6
+    - pygama >=2.2.3
     - colorlog
     - rich
 
@@ -52,9 +52,9 @@ requirements:
     - pyg4ometry
   run:
     - python
-    - legend-pydataobj >=1.16,<1.17
-    - reboost ==0.6.*
-    - pygama >=2.2.3,<2.3
+    - legend-pydataobj >=1.16
+    - reboost >=0.6
+    - pygama >=2.2.3
     - colorlog
     - rich
 
