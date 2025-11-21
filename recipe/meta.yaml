@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make
   host:
-    - geant4
+    - geant4 >=11.3
     - clhep
     - xerces-c
     - hdf5
@@ -34,9 +34,9 @@ requirements:
     - setuptools
     - setuptools-scm
 
-    - legend-pydataobj >=1.16,<1.17
-    - reboost ==0.6.*
-    - pygama >=2.2.3,<2.3
+    - legend-pydataobj >=1.16
+    - reboost >=0.6
+    - pygama >=2.2.3
     - colorlog
     - rich
 
@@ -52,9 +52,9 @@ requirements:
     - pyg4ometry
   run:
     - python
-    - legend-pydataobj >=1.16,<1.17
-    - reboost ==0.6.*
-    - pygama >=2.2.3,<2.3
+    - legend-pydataobj >=1.16
+    - reboost >=0.6
+    - pygama >=2.2.3
     - colorlog
     - rich
 
